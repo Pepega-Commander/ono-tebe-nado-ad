@@ -23,10 +23,8 @@ header address {
     font-style: normal;
 }
 
-header p.active {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 4px;
+header p {
+    text-decoration: none;
 }
 
 header ul {
@@ -298,6 +296,7 @@ footer {
 
 footer address {
     width: 264.5px;
+    font-style: normal;
 }
 
 footer ul li {
