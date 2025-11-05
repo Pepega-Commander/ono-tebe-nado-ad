@@ -1,1 +1,319 @@
-/* место для вашего кода */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 293px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 18px;
+}
+
+header img {
+    width: 148px;
+}
+
+header address {
+    width: 230px;
+    font-style: normal;
+}
+
+header p.active {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+header ul {
+    list-style-type: circle;
+    display: flex;
+    text-transform: lowercase;
+}
+
+header ul li {
+    margin-right: 25px;
+}
+
+header ul li:first-child {
+    list-style-type: none;
+}
+
+header ul li a {
+    color: #000000;
+}
+
+header ul li a:hover {
+    color: red;
+}
+
+a.active {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-justify: auto;
+    letter-spacing: 30px;
+}
+
+h1 p.first {
+    padding-top: 165px;
+}
+
+h1 p.second {
+    text-align: center;
+}
+
+h1 p.third {
+    text-align: end;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    align-items: end;
+}
+
+section.cover {
+    background-image: url("../images/cover.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 757px;
+    color: #FFFFFF;
+    font-weight: normal;
+    margin-bottom: 180px;
+    position: relative;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+section.cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+section.cover h1, p, button {
+    position: relative;
+    z-index: 2;
+    filter:brightness(100%);
+}
+
+.description {
+    padding-top: 106px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    display: block;
+    text-transform: uppercase;
+    
+}
+
+.description button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+div.circle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.circle img {
+    width: 148px;
+}
+
+div.aucinfo {
+    padding-left: 359px;
+}
+
+div.aucinfo h2 {
+    padding-bottom: 100px;
+}
+
+div.aucinfo .first {
+    margin-bottom: 24px;
+}
+
+section.auction {
+    padding-left: 24px;
+    padding-bottom: 180px;
+}
+
+div.description {
+    display: flex;
+    font-size: 22px;
+}
+
+div.description p {
+    width: 637px;
+}
+
+div.lots {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 120px;
+}
+
+h3 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+div.lots a {
+    height: 100%;
+}
+
+div.lots p {
+    font-size: 20px;
+    line-height: 120%;
+    margin-top: auto;
+}
+
+div.lots p.active {
+    text-decoration: none;
+}
+
+div.lots article {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 48px;
+}
+
+div.lots li.first p {
+    padding-top: 274px;
+}
+
+div.lots li.second p {
+    padding-top: 30px;
+}
+
+div.lots li.third p {
+    padding-top: 126px;
+}
+
+div.lots li.first {
+    background-image: url("../images/card-lot-01.jpg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+    color: #FFFFFF;
+    width: 334px;
+}
+
+div.lots li.first::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+div.lots li.first article {
+    position: relative;
+    z-index: 2;
+    filter:brightness(100%);
+}
+
+div.lots li.second {
+    background-image: url("../images/card-lot-02.jpg");
+    background-size:cover;
+    background-position: center;
+    color: #FFFFFF;
+    position: relative;
+    width: 334px;
+}
+
+div.lots li.second::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+div.lots li.second article {
+    position: relative;
+    z-index: 2;
+    filter:brightness(100%);
+}
+
+div.lots li.third {
+    background-image: url("../images/card-lot-03.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    position: relative;
+    width: 334px;
+}
+
+div.lots li.third::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+div.lots li.third article {
+    position: relative;
+    z-index: 2;
+    filter:brightness(100%);
+}
+
+div.lots ul li {
+    width: 254px;
+    height: 596px;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 180px;
+}
+
+footer address {
+    width: 264.5px;
+}
+
+footer ul li {
+    list-style-type: none;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+footer ul img {
+    margin-right: 48px;
+}
+
+footer ul {
+    margin-right: 50px;
+}
+
+footer img {
+    width: 48px;
+}
