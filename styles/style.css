@@ -24,7 +24,9 @@ header address {
 }
 
 header p {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
 }
 
 header ul {
@@ -61,15 +63,15 @@ h1 {
     letter-spacing: 30px;
 }
 
-h1 p.first {
+h1.first {
     padding-top: 165px;
 }
 
-h1 p.second {
+h1.second {
     text-align: center;
 }
 
-h1 p.third {
+h1.third {
     text-align: end;
 }
 
@@ -116,14 +118,19 @@ section.cover h1, p, button {
     
 }
 
+.description p {
+    word-spacing: 10px;
+}
+
 .description button {
-    border: none;
     background: none;
     padding: 0;
     margin: 0;
     outline: none;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 0;
+    width: 256px;
+    height: 51px;
     border-color: #FFFFFF;
     color: #FFFFFF;
 }
@@ -292,6 +299,8 @@ footer {
     justify-content: space-between;
     align-items: start;
     height: 180px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 footer address {
@@ -299,20 +308,18 @@ footer address {
     font-style: normal;
 }
 
-footer ul li {
+footer ul {
     list-style-type: none;
     text-transform: lowercase;
     text-align: center;
 }
 
-footer ul img {
-    margin-right: 48px;
+footer ul.listicons {
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
 }
 
-footer ul {
-    margin-right: 50px;
-}
-
-footer img {
+footer ul.listicons img {
     width: 48px;
 }
