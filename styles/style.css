@@ -15,17 +15,16 @@ header {
 }
 
 header img {
-    width: 148px;
+    height: 105px;
+    padding-right: 165px;
 }
 
 header address {
-    width: 230px;
+    font-size: 18px;
+    width: 240px;
+    margin-bottom: 4px;
     font-style: normal;
-}
-
-header p {
-    text-decoration: underline;
-    text-decoration-thickness: 1px;
+    line-height: 135%;
     text-underline-offset: 4px;
 }
 
@@ -36,7 +35,8 @@ header ul {
 }
 
 header ul li {
-    margin-right: 25px;
+    margin-right: 33.5px;
+    margin-bottom: 3.5px;
 }
 
 header ul li:first-child {
@@ -65,14 +65,17 @@ h1 {
 
 h1.first {
     padding-top: 165px;
+    margin-bottom: 15px;
 }
 
 h1.second {
     text-align: center;
+    margin-left: 27px;
+    margin-bottom: 17px;
 }
 
 h1.third {
-    text-align: end;
+    margin-left: 613px;
 }
 
 h2 {
@@ -119,11 +122,13 @@ section.cover h1, p, button {
 }
 
 .description p {
-    word-spacing: 10px;
+    word-spacing: 18.5px;
+    padding-top: 13px;
 }
 
 .description button {
     background: none;
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
     outline: none;
@@ -143,6 +148,8 @@ div.circle {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 155px;
+    margin-left: 47px;
 }
 
 div.circle img {
@@ -150,11 +157,16 @@ div.circle img {
 }
 
 div.aucinfo {
+    display: block;
     padding-left: 359px;
 }
 
 div.aucinfo h2 {
     padding-bottom: 100px;
+}
+
+div.aucinfo {
+    font-size: 20px;
 }
 
 div.aucinfo .first {
@@ -178,45 +190,49 @@ div.description p {
 div.lots {
     padding-left: 24px;
     padding-right: 24px;
-    padding-bottom: 120px;
 }
 
 h3 {
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: 22px;
+    text-decoration: underline;
+    padding-top: 25px;
 }
 
-div.lots a {
-    height: 100%;
+div.lots h2 {
+    padding-bottom: 27px;
+    padding-left: 40px;
+    margin-top: 20px;
+    line-height: 120%;
 }
 
-div.lots p {
+div.lots li a {
+    text-decoration: none;
+}
+
+div.lots li p {
     font-size: 20px;
     line-height: 120%;
-    margin-top: auto;
-}
-
-div.lots p.active {
     text-decoration: none;
 }
 
 div.lots article {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 48px;
 }
 
 div.lots li.first p {
-    padding-top: 274px;
+    padding-top: 275px;
 }
 
 div.lots li.second p {
-    padding-top: 30px;
+    padding-top: 35px;
 }
 
 div.lots li.third p {
-    padding-top: 126px;
+    padding-top: 131px;
+    
 }
 
 div.lots li.first {
@@ -226,6 +242,7 @@ div.lots li.first {
     position: relative;
     color: #FFFFFF;
     width: 334px;
+    margin-right: 25px;
 }
 
 div.lots li.first::before {
@@ -249,6 +266,7 @@ div.lots li.second {
     color: #FFFFFF;
     position: relative;
     width: 334px;
+    margin-right: 25px;
 }
 
 div.lots li.second::before {
@@ -288,11 +306,18 @@ div.lots li.third article {
     filter:brightness(100%);
 }
 
-div.lots ul li {
-    width: 254px;
+div.lots ul {
     height: 596px;
     display: flex;
+    margin-bottom: 30px;
 }
+
+div.lots a {
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+
 
 footer {
     display: flex;
@@ -306,6 +331,12 @@ footer {
 footer address {
     width: 264.5px;
     font-style: normal;
+    font-size: 18px;
+    width: 264px;
+    margin-bottom: 3px;
+    font-style: normal;
+    line-height: 135%;
+    text-underline-offset: 4px;
 }
 
 footer ul {
